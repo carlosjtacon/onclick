@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: About OnClick
+permalink: /about-onclick/
 ---
-*Arctic Fox* is a lightweight and customisable Jekyll Theme.
+*OnClick* is Carlos Tacon's personal blog.
 
-* Author: Camille Diez
-* Github: http://github.com/diezcami
-* Portfolio: http://diezcami.github.io
+Visit the [homepage](http://ctacon.me).
