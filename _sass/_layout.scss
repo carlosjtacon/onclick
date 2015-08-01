@@ -9,6 +9,21 @@
 
     .site-header a {color: $brand-color};
 
+    .return {
+        float: left;
+        margin-left: 25px;
+        padding-top: 16px;
+
+        font-family: 'Open Sans';
+        font-weight: 700 !important;
+        line-height: $base-line-height;
+        letter-spacing: 0.05em;
+
+        &:hover {
+            opacity: 0.8
+        };
+    }
+
     .site-nav {
         padding-top: 16px;
         float: right;
