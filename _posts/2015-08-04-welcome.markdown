@@ -1,0 +1,80 @@
+---
+layout: post
+title: "Presentación de mi nuevo Blog y Web Personal"
+date: 2015-08-04
+categories:
+---
+
+![Homescreen](/onclick/post_images/2015-08-04-welcome/homescreen.png)
+
+Hacía tiempo que quería renovar mi página web personal, hasta ahora contaba con una web montada en Wordpress, que era muy pesada y con demasiado contenido. Como últimamente he tenido unos ratos libres he decidido ponerme a crear esta nueva versión, usando mis conocimientos básicos sobre HTML, CSS y JS, y ha salido esto.
+
+## Homescreen
+
+Para el desarrollo de la ventana principal hice un pequeño diseño en [Sketch](http://bohemiancoding.com/sketch/) que repliqué usando HTML y CSS. Una vez estaba la estructura principal añadí las librerías y recursos que necesitaba: [Font Awesome](http://fortawesome.github.io/Font-Awesome/) para añadir los iconos de redes sociales o servicios, [Bootrstrap Grid](https://github.com/zirafa/bootstrap-grid-only) para la adaptación responsive, y en el futuro usaré [animate.css](https://github.com/daneden/animate.css) para las animaciones y [smoothstate.js](https://github.com/miguel-perez/smoothState.js) para las transiciones entre páginas. 
+
+Para el efecto hover en los iconos creé unas funciones en Javascript, específicas para cada icono con su color de marca y su nombre, y una función general para revertir el proceso al salir del evento hover:
+
+```javascript
+var revert = function() {
+	$('#name').text("Carlos Tacón");
+    $('#name').css("color", "#353A47");
+    $('.social-icon').css("color", "#353A47");
+}
+
+$('#aw-twitter').hover(
+    function() {
+        $('#name').text("twitter");
+        $('#name').css("color", "#55ACEE");
+        $('#aw-twitter').css("color", "#55ACEE");
+    },
+    revert
+);
+```
+
+Añadí muchos enlaces a redes sociales soportados hasta que me decidía que usar finalmente, pero como tienen una estructura similar no es difícil modificarlos si cambio de opinión:
+
+```html
+<a href="https://twitter.com/carlosjtacon">
+	<i id="aw-twitter" class="fa fa-twitter fa-3x social-icon"></i>
+</a>
+```
+
+## About
+
+La página de información personal tiene el diseño contrario a la principal: fondo oscuro y texto blanco, para crear algo de contraste, tiene unos puntos de información sobre mí y un enlace a mi *curriculum vitae*.
+
+Para el desarrollo responsive de la página opté por el sistema de 12 columnas de Bootstrap, haciendo que tenga una estructura 4 - 8 en pantallas grandes y 12 - 12 en pantallas pequeñas.
+
+```html
+<div class="col-xs-12 col-sm-4 col-md-4">
+	<!-- Avatar & CV -->
+</div>
+<div class="col-xs-12 col-sm-8 col-md-8">
+	<!-- Texto -->
+</div>
+```
+
+## Blog
+
+Aparte de una web de presentación quería un sistema más sencillo de *blogging*, wordpress se hace demasiado pesado para publicar ocasionalmente, quería librarme de cualquier CMS así que opté por [Jekyll](http://jekyllrb.com/): un sistema de publicación estático con soporte para markdown, perfecto para mí.
+
+No me convencía el tema predeterminado de la plataforma así que adopté el creado por [Camille Diez](http://diezcami.me/) modificando un par de cosas y añadiendo un botón para volver a la página principal, así parece parte de esta:
+
+```html
+<div class="site-header">
+    <div class="return"><a class="page-link" href="{{ site.url }}/" 
+    	style="float: left"> ← ctacon.me </a></div>
+...
+```
+
+Con Jekyll puedo postear fácilmente y gratis, ya que, al igual que mi página principal, utilizo el hosting de [GitHub](https://pages.github.com/).
+
+## ¿Ahora qué?
+
+- Soporte Español / Inglés.
+- Mobile: por algún motivo los grid responsive de bootstrap no me están funcionando como quiero en móvil, hay que repasarlo. Además hay que adaptar la usabilidad, ya que no hay hover en pantalla táctil.
+- Añadir proyectos a la sección labs.
+- Usar Smoothstate.js y Animate.css.
+
+> El código fuente tanto de la web como del blog están disponibles en mi [perfil de GitHub](http://github.com/carlosjtacon).
