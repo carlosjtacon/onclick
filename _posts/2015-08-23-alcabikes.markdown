@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Alcabikes - Encuentra un Parking de Bicicletas en Alcalá de Henares"
+title: "Alcabikes - Encuentra un Parking de Bicicletas en Alcalá"
 date: 2015-08-23
 categories:
 ---
