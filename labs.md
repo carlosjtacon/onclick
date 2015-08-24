@@ -21,5 +21,5 @@ Personal website source code.
 #### [bugmenot-extension](https://github.com/carlosjtacon/bugmenot-extension)
 Browser extension for bugmenot.com. It allows you find anonymous logins for the current webpage without leaving it. Chrome & Safari.
 
-
-<!-- - plextras -->
+#### [plextras](https://github.com/carlosjtacon/plextras)
+Download your own extra content for Plex: Interviews, Trailer, Behind the Scenes... Linux & OS X.
