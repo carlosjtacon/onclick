@@ -1,0 +1,19 @@
+---
+layout: post
+title: "Plextras - Download aditional content on your Plex Server"
+date: 2015-08-23
+categories:
+---
+
+[Plex](https://plex.tv) is a great media center solution, I use it a lot to watch films and tv shows. Plex Pass users can access streaming additional content, but I wanted to have this extra content locally on disk.
+
+Using Plextras I can download trailer, interviews and behind the scenes videos. I have developed this simple script using python, it works on Linux and OS X and to use the script you need to get a [YouTube API Key](https://developers.google.com/youtube/registering_an_application) and place it into the code. You can also customize the youtube searches on the 5 last lines of code.
+
+__Usage:__ python plextras.py [film name] [file / folder path]
+
+__Dependencies:__
+
+- sudo pip install --upgrade google-api-python-client
+- sudo pip install --upgrade youtube-dl
+
+> Download Plextras @ [GitHub](http://github.com/carlosjtacon/plextras).
