@@ -9,8 +9,8 @@ permalink: /labs/
 #### [iso2usb](https://github.com/carlosjtacon/iso2usb)
 System utility written in python. It can be used to burn an OS iso file into an usb disk using the Terminal.app on OS X.
 
-#### [googlemovies-showtimes](https://github.com/carlosjtacon/googlemovies-showtimes)
-Showtimes parser written in Java for Google Movies.
+#### [showtimes-api](https://github.com/carlosjtacon/showtimes-api)
+JSON based REST API for Movie Showtimes Worldwide. Data received from Google Movies for showtimes, OpenStreetMap Nominatim for location metadata of theatres and TheMovieDB for movie metadata such as poster, description or movie info. English and Spanish supported. 
 
 #### [alcabikes](https://github.com/carlosjtacon/alcabikes)
 Find bike parkings @ Alcalá de Henares.
