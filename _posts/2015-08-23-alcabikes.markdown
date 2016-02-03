@@ -18,4 +18,4 @@ Tecnologías utilizadas:
 - [Turf](http://turfjs.org) - para calcular el parking más cercano.
 - [Bootstrap](http://getbootstrap.com) - web responsive & tema no oficial.
 
-Podéis acceder a la aplicación en [ctacon.me/alcabikes](http://ctacon.me/alcabikes/) (Desktop & Mobile).
+Podéis acceder a la aplicación en [ctacon.me/alcabikes](http://carlosjtacon.com/alcabikes/) (Desktop & Mobile).
